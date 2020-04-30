@@ -1,0 +1,59 @@
+*{
+	font-family: 'Catamaran', sans-serif;
+}
+
+h1{
+	text-align:center;
+}
+
+.container{
+	/* what does float do here?*/
+	/* when the containers were set to float -- the containers appear next to each others*/
+	float: left;
+	width: 33.33%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+section	{
+	background-color: #D6D6D6;
+	border-style: solid;
+	height: 150px;
+	overflow: auto;
+}
+
+.heading{
+	float: right;
+	/* make some spaces on both sides*/
+	padding:0px 15px;
+	/* adding border to the heading */
+	border-style: solid;
+	border-width: 0px 0px 2px 2px;
+}
+
+.heading1{background-color: #68A2FF}
+.heading2{background-color: #FF4545}
+.heading3{background-color: #FFC34A}
+
+p{
+	clear: both;
+	padding: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.container1, .container2{
+		/*float: left;*/
+		width: 50%;
+	}
+
+	.container3{
+		/*float: left;*/
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px){
+	.container1, .container2, .container3{
+		width: 100%;
+	}
+}
